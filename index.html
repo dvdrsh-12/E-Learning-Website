@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetZLearn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu" class="fa-solid fa-bars"></div>
+      <a href="#" class="logo"
+        ><i class="fa-solid fa-graduation-cap"></i>LetZLearn</a
+      >
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#course">Course</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="login" class="fa-solid fa-user-tie"></div>
+    </header>
+    <div class="login-form">
+      <form id="loginhide">
+        <h3>Login</h3>
+        <input type="email" placeholder="Email" class="box" />
+        <input type="password" placeholder="Password" class="box" />
+        <p>Forgot Password?<a href="#">Click Here</a></p>
+        <p>
+          Don't have an account?<a id="registerNowLink" href="#"
+            >Register Now</a
+          >
+        </p>
+        <input type="submit" class="btn" value="login" />
+        <i class="fa-solid fa-xmark"></i>
+      </form>
+      <form id="registerForm" style="display: none">
+        <h3>Register</h3>
+        <input type="text" placeholder="First Name" class="box" />
+        <input type="text" placeholder="Last Name" class="box" />
+        <input type="email" placeholder="Email" class="box" />
+        <input type="password" placeholder="Password" class="box" />
+        <input type="submit" class="btn" value="Register" />
+        <i class="fa-solid fa-xmark"></i>
+      </form>
+    </div>
+    <section class="home" id="home">
+      <div class="desc">
+        <h1>LetZ Learn</h1>
+        <p>
+          Welcome to LetZLearn, your gateway to a world of knowledge and
+          personal growth! At LetZLearn, we believe in the transformative power
+          of education. Our e-learning platform offers a diverse range of
+          courses designed to meet the evolving needs of learners around the
+          globe. Whether you're a student seeking to enhance your academic
+          skills, a professional aiming to upskill, or an enthusiast pursuing a
+          new passion, LetZLearn provides a dynamic and engaging learning
+          environment. Explore our extensive catalog of courses, guided by
+          experienced instructors, and embark on a journey of discovery. Join
+          our vibrant community of learners today and unlock the doors to a
+          brighter future. LetZLearn – where knowledge meets innovation.
+        </p>
+      </div>
+      <a href="#"><button class="btn">Get Started</button></a>
+    </section>
+    <section class="about" id="about">
+      <div class="image">
+        <img src="./assets/about.svg" alt="About Image" />
+      </div>
+      <div class="content">
+        <h3>Why Choose Us</h3>
+        <p>
+          At LetZLearn, our vision is to revolutionize education by providing a
+          dynamic and accessible platform for learners worldwide. We believe in
+          the power of knowledge to transform lives and open doors to new
+          opportunities. With a commitment to innovation and excellence, we
+          strive to create an environment where individuals can embark on a
+          learning journey tailored to their unique aspirations. Our vision
+          extends beyond conventional boundaries, fostering a global community
+          of motivated learners eager to explore and expand their horizons.
+        </p>
+        <p>
+          LetZLearn takes a holistic approach to education, recognizing that
+          learning is a lifelong pursuit. We curate a diverse range of courses
+          led by experienced instructors, ensuring that each learning experience
+          is enriching and impactful. Our platform caters to students,
+          professionals, and enthusiasts alike, promoting a culture of
+          continuous growth and skill development. By combining cutting-edge
+          technology with a passion for education, we aim to make learning
+          engaging, interactive, and relevant to the evolving needs of the
+          modern learner. Join us on this educational journey, where your
+          curiosity meets our commitment to excellence.
+        </p>
+        <a href="#"><button class="btn">Learn More</button></a>
+      </div>
+    </section>
+    <section id="course" class="course">
+      <h1 class="heading">Our Popular Courses</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/course1.png" alt="Course 1" />
+          <h3 class="price">$50</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="title">Front End Development</a>
+            <p>
+              Front-end development, often referred to as the "client side" of
+              web development, is the practice of creating the visual and
+              interactive elements of a website or web application that users
+              directly interact with. Front-end developers utilize a combination
+              of programming languages such as HTML, CSS, and JavaScript to
+              design and implement the user interface, ensuring a seamless and
+              engaging user experience.
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>2 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>6 Months</h3>
+              <h3><i class="fa-solid fa-book"></i>12 Modules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/course3.jpg" alt="Course 3" />
+          <h3 class="price">$75</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="#" class="title">Data Science</a>
+            <p>
+              Data Science is a multidisciplinary field that involves extracting
+              insights and knowledge from structured and unstructured data. It
+              combines expertise from statistics, mathematics, and computer
+              science to analyze complex datasets and generate valuable
+              information, trends, and patterns.The data science process
+              typically involves data collection, cleaning, and
+              preprocessing,followed by exploratory data analysis.
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>3 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>8 Months</h3>
+              <h3><i class="fa-solid fa-book"></i>15 Modules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/course2.jpg" alt="Course 2" />
+          <h3 class="price">$100</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="title">Web Development</a>
+            <p>
+              Back-end development, commonly known as the "server side"
+              counterpart to front-end development, is the art and science of
+              building the hidden, functionalities of websites and web
+              applications. Back-end developers work with server-side languages
+              like Python or PHP, along with databases such as MySQL or MongoDB,
+              to manage data, execute server operations, and ensure the overall
+              functionality of a digital platform.
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>4 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>1 Year</h3>
+              <h3><i class="fa-solid fa-book"></i>20 Modules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/course4.jpg" alt="Course 4" />
+          <h3 class="price">$120</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="#" class="title">Artificial Intelligence</a>
+            <p>
+              Artificial Intelligence (AI) is a branch of computer science
+              focused on creating intelligent machines that can simulate
+              human-like intelligence and perform tasks that typically require
+              human intelligence. AI systems aim to mimic cognitive functions
+              such as learning,problem-solving,and language understanding.The
+              field encompasses various approaches, including machine
+              learning,natural language processing, and robotics.
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>5 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>9 Months</h3>
+              <h3><i class="fa-solid fa-book"></i>25 Modules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/course5.jpg" alt="Course 5" />
+          <h3 class="price">$80</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="#" class="title">Machine Learning</a>
+            <p>
+              Machine Learning (ML) is a specialized field within artificial
+              intelligence (AI) that focuses on developing algorithms and
+              statistical models that enable computer systems to perform tasks
+              without being explicitly programmed. The core idea behind machine
+              learning is to enable machines to learn from data, recognize
+              patterns, and make decisions or predictions based on that
+              learning.There are three main types of machine learning
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>3 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>7 Months</h3>
+              <h3><i class="fa-solid fa-book"></i>22 Modules</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/course6.png" alt="Course 6" />
+          <h3 class="price">$70</h3>
+          <div class="content">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="title">Ethical Hacking</a>
+            <p>
+              Ethical hacking, also known as penetration testing or white-hat
+              hacking, involves authorized professionals, known as ethical
+              hackers, assessing and securing computer systems, networks, and
+              applications. The primary goal is to identify vulnerabilities and
+              weaknesses in a system's defenses to prevent unauthorized access,
+              data breaches, or cyber attacks.Let's delve into each of these
+              areas.
+            </p>
+            <div class="info">
+              <h3><i class="fa-solid fa-clock"></i>2 Hours</h3>
+              <h3><i class="fa-solid fa-calendar-days"> </i>6 Months</h3>
+              <h3><i class="fa-solid fa-book"></i>12 Modules</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faculty" id="faculty">
+      <div class="facdiv">
+        <h1 class="heading">Our Expert Faculties</h1>
+        <p>
+          Our dedicated team of faculties at LetZLearn comprises experienced and
+          passionate educators committed to guiding learners on their
+          educational journey. Each faculty member brings a wealth of knowledge
+          and practical expertise to their respective fields, fostering an
+          environment of academic excellence and innovation. Whether in
+          technology, business, or the arts, our faculties are devoted to
+          imparting quality education, inspiring critical thinking, and
+          nurturing the skills necessary for success. Through engaging lectures,
+          personalized mentorship, and a student-centered approach, our
+          faculties play a pivotal role in shaping the learning experience and
+          empowering students to achieve their academic and professional goals.
+          Join us, and learn from a diverse and accomplished faculty dedicated
+          to your growth and success.
+        </p>
+        <a href="#"><button class="btn">Learn More</button></a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact Us</h1>
+      <div class="row">
+        <form>
+          <input type="text" placeholder="Full Name" class="box" />
+          <input type="email" placeholder="Your Email" class="box" />
+          <input type="password" placeholder="Your Password" class="box" />
+          <input type="number" placeholder="Your Number" class="box" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="box address"
+            placeholder="Your Address"
+          ></textarea>
+          <input type="submit" class="btn" value="Send Now" />
+        </form>
+        <div class="image">
+          <img src="./assets/contact.avif" alt="Contact" />
+        </div>
+      </div>
+    </section>
+    <section class="foot">
+      <div class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">UK</a>
+            <a href="#">Middle East</a>
+          </div>
+          <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Course</a>
+            <a href="#">Faculty</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="box">
+            <h3>Contact Info</h3>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Kochi,Kerala,India 682001
+            </p>
+            <p><i class="fa-solid fa-envelope"></i>letzlearn@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+          </div>
+        </div>
+        <h1 class="credit">
+          <a href="#">LetZLearn</a> &#169; All Rights Reserved
+        </h1>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
