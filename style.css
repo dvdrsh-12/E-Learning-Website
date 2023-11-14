@@ -1,5 +1,5 @@
 :root {
-    --gradient: linear-gradient(90deg, #f1c40f, #f39c12);
+    --gradient: linear-gradient(90deg, #0093E9, #80D0C7);
 }
 
 * {
@@ -32,11 +32,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: #333333;
+    background: black;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: linear-gradient(#f1c40f, #f39c12);
+    background: linear-gradient(#0093E9, #80D0C7);
 }
 
 section {
@@ -77,9 +77,11 @@ section {
 }
 
 .heading {
+    display: flex;
     color: black;
     padding: 1rem;
     font-size: 4rem;
+    justify-content: center;
     align-items: center;
 }
 
@@ -170,7 +172,7 @@ header #menu {
 
 .login-form form h3 {
     font-size: 3rem;
-    color: #f39c12;
+    color: #0093E9;
     padding: 1rem 0;
 }
 
@@ -179,7 +181,7 @@ header #menu {
     padding: 1rem 0;
     margin: 1rem 0;
     border: none;
-    border-bottom: 0.2rem solid #666666;
+    border-bottom: 0.2rem solid black;
     font-size: 1.6rem;
     color: #333333;
     text-transform: none;
@@ -199,12 +201,12 @@ header #menu {
 
 .login-form form p {
     font-size: 1.4rem;
-    color: #666666;
+    color: black;
     padding: 0.5rem 0;
 }
 
 .login-form form p a {
-    color: #f39c12;
+    color: #0093E9;
 }
 
 .login-form form .btn {
@@ -213,7 +215,7 @@ header #menu {
 }
 
 .login-form form .btn:hover {
-    background: #444444;
+    background: black;
 }
 
 .login-form form .fa-xmark {
@@ -222,11 +224,11 @@ header #menu {
     right: 2rem;
     font-size: 2.5rem;
     cursor: pointer;
-    color: #999999;
+    color: black;
 }
 
 .login-form form .fa-xmark:hover {
-    color: #444444;
+    color: black;
 }
 
 .login-form form#registerForm {
@@ -286,13 +288,16 @@ header #menu {
 }
 
 .about .content h3 {
+    display: flex;
     font-size: 3.5rem;
-    color: #666666;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .content p {
     font-size: 1.5rem;
-    color: #666666;
+    color: black;
     padding: 1rem 0;
 }
 
@@ -323,13 +328,13 @@ header #menu {
 }
 
 .course .box-container .box .content i {
-    color: #f39c12;
+    color: #0093E9;
     font-size: 1.7rem;
     padding: 1rem 0.1rem;
 }
 
 .course .box-container .box .content .title {
-    color: #444444;
+    color: black;
     font-size: 2.1rem;
 }
 
@@ -339,7 +344,7 @@ header #menu {
 
 .course .box-container .box .content p {
     padding: 1rem;
-    color: #666666;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -358,7 +363,7 @@ header #menu {
 }
 
 .course .box-container .box .content .info h3 i {
-    color: #f39c12;
+    color: #0093E9;
 }
 
 .course .box-container .box .price {
@@ -434,19 +439,21 @@ header #menu {
 }
 
 .contact .row form {
+    --gap: 1.5rem;
     flex: 1 1 50rem;
     background: #222222;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    margin: 3rem;
     align-items: self-start;
+    gap: var(--gap);
 }
 
 .contact .row form .box {
     height: 5rem;
-    width: 50%;
+    width: calc(50% - (var(--gap) / 2));
     border: 0.1rem solid #eee;
     padding: 0 1rem;
     font-size: 1.7rem;
@@ -517,7 +524,7 @@ header #menu {
 
 .footer .box-container .box p i {
     padding-right: 0.5rem;
-    color: #f39c12;
+    color: #0093E9;
 }
 
 .footer .box-container .box a {
